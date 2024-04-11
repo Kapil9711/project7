@@ -1,0 +1,35 @@
+.grid{
+    margin:0 auto;
+    width: min(95%,1000px);
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 'header' 'main-container' 'footer-Containers';   
+    align-items: center;
+    justify-items: center;  
+}
+
+@media (min-width:776px){
+    .grid{
+        grid-template-areas: 'header header header' 'footer main main' ;
+        grid-template-rows: 200px auto ;
+    }
+   .header{
+   grid-area:header;
+   
+  
+}
+.main-container{
+   grid-area:main;
+    
+   
+}
+.footer-container{
+    grid-area:footer;  
+    width: 400px;
+   
+}
+.footer-container .boxes{
+    gap:30px;
+}
+}
+

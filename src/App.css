@@ -1,0 +1,9 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: 0;
+}
+#root{
+  background:hsl(200 100% 45%);
+  min-height: 100vh;
+}
